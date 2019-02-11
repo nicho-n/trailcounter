@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\nicnowak\\.android\\build-cache\\cf5f07cd4fcc97ada2bb746a79e80cbe86b8bf10\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\nicnowak\\.android\\build-cache\\cf5f07cd4fcc97ada2bb746a79e80cbe86b8bf10\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\nicnowak\\.android\\build-cache\\cf5f07cd4fcc97ada2bb746a79e80cbe86b8bf10\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\nicnowak\\.android\\build-cache\\cf5f07cd4fcc97ada2bb746a79e80cbe86b8bf10\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

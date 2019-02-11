@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\trail_counter.png",
+        "source": "C:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\src\\main\\res\\mipmap-xxxhdpi\\trail_counter.png"
+    }
+]

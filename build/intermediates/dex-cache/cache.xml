@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\cf5f07cd4fcc97ada2bb746a79e80cbe86b8bf10\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6766d7433d4356d9055fa6a31be5f95ea767f207\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e8c98a2f6fb19a86674013a869356f5a1b46563d">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_344ad5fd9d654b96bd8106f4b6d59de4dc82c685\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\c6107da36e0cc0c76889f16bdd6764dc02a141c9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c14d049dc46260da1c76a9d18672d0636c5964a0">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7e34616d850187c8c100fa32299b8df5824401a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\6755968a4bb46a28cb29d3e8b79e8e2f7666482e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ea03419df7e802d21847339d35cb2a00713f6942\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\be6753800bef3e565d9c4ca46f6befae9ab1db3f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7590ee57c067349f6a6b8e14838f916ce922a5cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\d37adc5ecffccc2cc64c9df11e1e2fc404deb670\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33970f284f689508b9d50bbcc13c2caaaf50a5f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\362decf2b4096aca64d9a2334a448dcd74896433\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7707b1d6b51aa62155a6a290643ebff8bd3a4a95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\4c78d2543ddf40965d6a9876c5f3d12647b49b28\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cad5b131f7a0346f6a785bdf48108853907fbac9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_92442cc7c7806273313733eec5358e5d57a7438d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_a2baaec01e69bc5d5098709532d9545e4715bbb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_80248375650ba447b232348e0aa9f782b1209b07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\1784506574c4e761f913566ffe9e066a5d97822a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_36b90aafe6984f7af552dd2d39cc224ebf9cc803\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\1df63358bbaf31d5cebee6ae586c01b5ed455905\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5dbca71ae3271799df5a778ead7b28e720d6663e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\45d073898808824054b3d80035312d613c9839b3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e84f23f4752ee84f8ee927c2acbe799a74cfb3c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicnowak\.android\build-cache\9f9ac86c31a04835168a3010710730515e179ca7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\nicnowak\AndroidStudioProjects\TrailCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2b1db9fb266e8bc77772afea7d07835c17fd5cd5\classes.dex" />
+    </item>
+
+</items>

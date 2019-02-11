@@ -1,0 +1,7 @@
+#Tue Aug 29 19:44:34 EDT 2017
+base.0=C\:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80248375650ba447b232348e0aa9f782b1209b07
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_344ad5fd9d654b96bd8106f4b6d59de4dc82c685\\classes.dex
+base.1=C\:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_344ad5fd9d654b96bd8106f4b6d59de4dc82c685
+file.0=C\:\\Users\\nicnowak\\AndroidStudioProjects\\TrailCounter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80248375650ba447b232348e0aa9f782b1209b07\\classes.dex
