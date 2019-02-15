@@ -95,30 +95,31 @@ public class MainActivity extends Activity {
         GeoPoint loc_TC05 = new GeoPoint(46.57355, -87.41553);
         GeoPoint loc_TC06 = new GeoPoint(46.57355, -87.41553);
         GeoPoint loc_TC07 = new GeoPoint(46.57355, -87.41553);
+        
+        /*
+          Now the map is zoomed in on startPoint, the Noquemanon trailhead.
+          mapController.setCenter(startPoint);
 
-        //Now the map is zoomed in on startPoint, the Noquemanon trailhead.
-//        mapController.setCenter(startPoint);
+          build a new marker pin. Each pin represents an arduino board.
+          This should be put into a method.
+          Marker TC01 = new Marker(map);
+          TC01.setPosition(startPoint);
+          TC01.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+          TC01.setTitle("TC01");
 
-        // build a new marker pin. Each pin represents an arduino board.
-        //This should be put into a method.
-  //      Marker TC01 = new Marker(map);
-    //    TC01.setPosition(startPoint);
-      //  TC01.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-        //TC01.setTitle("TC01");
+          Marker TC02 = new Marker(map);
+          TC02.setPosition(loc_TC02);
+          TC02.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+          TC02.setTitle("TC02");
 
-        //Marker TC02 = new Marker(map);
-        //TC02.setPosition(loc_TC02);
-        //TC02.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-        //TC02.setTitle("TC02");
-
-       // Marker TC03= new Marker(map);
-       // TC03.setPosition(loc_TC03);
-      //  TC03.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-      //  TC03.setTitle("TC03");
+          Marker TC03= new Marker(map);
+          TC03.setPosition(loc_TC03);
+          TC03.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+          TC03.setTitle("TC03");
 
 
-       // Marker TC04= new Marker(map);
-      /*  TC04.setPosition(loc_TC04);
+         Marker TC04= new Marker(map);
+           TC04.setPosition(loc_TC04);
         TC04.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
         TC04.setTitle("TC04");
 
@@ -147,19 +148,20 @@ public class MainActivity extends Activity {
         textView.append("The first time you use this app you must pair your phone with each sensor so it has permission to connect.\n\n");
         textView.append("To do this select 'HC-05' in your phone's Bluetooth menu when you turn on the counter. \n\n" );
         textView.append("Another line for tests");
+        
         //Configure GpsMyLocationProvider, which provides the app with the user's location.
         GpsMyLocationProvider imlp = new GpsMyLocationProvider(this.getBaseContext());
         imlp.setLocationUpdateMinDistance(10);
         imlp.setLocationUpdateMinTime(1);
 
         //LocationOverlay is used to display user's location on the map.
-    /*    MyLocationNewOverlay myLocationOverlay = new MyLocationNewOverlay(imlp, map);
+       MyLocationNewOverlay myLocationOverlay = new MyLocationNewOverlay(imlp, map);
 
-        //Get the user's location and plot it on the map.
+        // plot user's location on the map.
         myLocationOverlay.enableMyLocation();
         myLocationOverlay.enableFollowLocation();
         map.getOverlays().add(4, myLocationOverlay);
-*/
+
         //Set a listener that causes the buttons to run a method when clicked.
         sendfile.setOnClickListener(new View.OnClickListener() {
             //Run bluetooth code on button click.
