@@ -74,17 +74,14 @@ public class MainActivity extends Activity {
         Configuration.getInstance().load(ctx, PreferenceManager.getDefaultSharedPreferences(ctx));
         setContentView(R.layout.activity_main);
 
-
-        //The map used is OpenStreetMaps. It allows us to cache maps on the user's phone
-        //It is also possible to use any map source you wish.
-       //MapView map = (MapView) findViewById(R.id.map);
-       // map.setTileSource(TileSourceFactory.MAPNIK);
+        MapView map = (MapView) findViewById(R.id.map);
+        map.setTileSource(TileSourceFactory.MAPNIK);
 
         //Allows the user to zoom in and out with two fingers/
-       // map.setMultiTouchControls(true);
+        map.setMultiTouchControls(true);
 
-        //Use mapController to set the default zoom level.
-     //   final IMapController mapController = map.getController();
+     //Use mapController to set the default zoom level.
+        final IMapController mapController = map.getController();
      //   mapController.setZoom(12);
 
         //Set as many points as you wish. Might be added via button later on.
@@ -226,7 +223,6 @@ public class MainActivity extends Activity {
                         try {btSocket.connect();} catch (IOException ex) {}
 
                         if (btSocket.isConnected()) {
-
                             //Write 'r' to arduino to tell it to send data.
                             try {
                                 outStream = btSocket.getOutputStream();
@@ -235,7 +231,6 @@ public class MainActivity extends Activity {
                                 //Reading code is ran inside a thread for reliable results.
                                 ConnectedThread myThread = new ConnectedThread(btSocket);
                                 myThread.start();
-
                                 //Use a stack to reverse contents of textView so newest data is first.
                                     String a = textView.getText().toString();
                                     Stack<String> st = new Stack<>();
@@ -248,8 +243,7 @@ public class MainActivity extends Activity {
                                     while (!st.empty()){
                                         textView.append(st.pop() + "\n");
                                     }
-                                //
-
+                                
                             }
                             catch (IOException ex) {Toast.makeText(getApplicationContext(), "Error writing to Arduino.", Toast.LENGTH_SHORT).show();}
                         }
@@ -262,11 +256,8 @@ public class MainActivity extends Activity {
 
     //Writes a string to a textfile. In Java the max size of a string is heap size/2. Usually around 2gb.
     private void writeToFile(String data) {
-
-
-
-
-            //File is written to external storage, which means its readable outside the app.
+        
+        //File is written to external storage, which means its readable outside the app.
         File root = Environment.getExternalStorageDirectory();
 
         //Save to TrailCounter directory.
@@ -295,12 +286,10 @@ public class MainActivity extends Activity {
             }
 
         } catch (FileNotFoundException e) {
-        } catch (IOException ex) {
-        }
+        } catch (IOException ex) {}
     }
 
-    //Threads are kind of hard to explain. They are ran independently from the rest of the app and use their own resources.
-    //Using a thread is the only way to read from the arduino reliably and quickly.
+    //Read data in thread 
     private class ConnectedThread extends Thread {
         final Handler handler = new Handler();
         public ConnectedThread(BluetoothSocket socket) {
@@ -327,13 +316,10 @@ public class MainActivity extends Activity {
                     //When there is no more data to read the thread is closed.
                     break;
                 }
-
-
-            }
-
             }
         }
     }
+}
 
 
 
