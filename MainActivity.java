@@ -64,25 +64,19 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        //This method contains code that intitializes and configures the user interface.
-
-
         //Stuff that makes the map API work.
         super.onCreate(savedInstanceState);
         Context ctx = getApplicationContext();
         //important! set your user agent to prevent getting banned from the osm servers
         Configuration.getInstance().load(ctx, PreferenceManager.getDefaultSharedPreferences(ctx));
         setContentView(R.layout.activity_main);
-
         MapView map = (MapView) findViewById(R.id.map);
         map.setTileSource(TileSourceFactory.MAPNIK);
-
         //Allows the user to zoom in and out with two fingers/
         map.setMultiTouchControls(true);
-
-     //Use mapController to set the default zoom level.
+        //Use mapController to set the default zoom level.
         final IMapController mapController = map.getController();
-     //   mapController.setZoom(12);
+        mapController.setZoom(12);
 
         //Set as many points as you wish. Might be added via button later on.
         GeoPoint startPoint = new GeoPoint(46.5108,-87.4093);
@@ -93,46 +87,29 @@ public class MainActivity extends Activity {
         GeoPoint loc_TC06 = new GeoPoint(46.57355, -87.41553);
         GeoPoint loc_TC07 = new GeoPoint(46.57355, -87.41553);
         
-        /*
-          Now the map is zoomed in on startPoint, the Noquemanon trailhead.
-          mapController.setCenter(startPoint);
-          build a new marker pin. Each pin represents an arduino board.
-          This should be put into a method.
-          Marker TC01 = new Marker(map);
-          TC01.setPosition(startPoint);
-          TC01.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-          TC01.setTitle("TC01");
-          Marker TC02 = new Marker(map);
-          TC02.setPosition(loc_TC02);
-          TC02.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-          TC02.setTitle("TC02");
-          Marker TC03= new Marker(map);
-          TC03.setPosition(loc_TC03);
-          TC03.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-          TC03.setTitle("TC03");
-         Marker TC04= new Marker(map);
-           TC04.setPosition(loc_TC04);
-        TC04.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-        TC04.setTitle("TC04");
+        //Now the map is zoomed in on startPoint, the Noquemanon trailhead.
+        mapController.setCenter(startPoint);
+        Marker TC01 = new Marker(map);
+        TC01.setPosition(startPoint);
+        TC01.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+        TC01.setTitle("TC01");
         //Add all markers to a list to perform comparison operations later.
         ArrayList<Marker> markers = new ArrayList<Marker>();
         markers.add(0, TC01);markers.add(1, TC02);markers.add(2, TC03);markers.add(3, TC04);
+        
         //Add all the points to the map Overlay so they become visible.
         map.getOverlays().add(0, TC01);
-        map.getOverlays().add(1, TC02);
-        map.getOverlays().add(2, TC03);
-        map.getOverlays().add(3, TC04);
-*/
+        
         //Two buttons that run a function when clicked. Created in activity_main.xml
         Button btbutton = (Button) findViewById(R.id.bluetooth);
         Button sendfile = (Button) findViewById(R.id.bluetooth2);
-
+        
         //Textview contains a welcome message and is also used for previewing data
         textView = (TextView) findViewById(R.id.MyTextView);
-
+        
         //Allows the user to scroll through the textview.
         textView.setMovementMethod(new ScrollingMovementMethod());
-
+        
         //Display welcome message.
         textView.append("Welcome to TrailCounter v1.0! \n\n");
         textView.append("The first time you use this app you must pair your phone with each sensor so it has permission to connect.\n\n");
@@ -145,7 +122,7 @@ public class MainActivity extends Activity {
         imlp.setLocationUpdateMinTime(1);
 
         //LocationOverlay is used to display user's location on the map.
-       MyLocationNewOverlay myLocationOverlay = new MyLocationNewOverlay(imlp, map);
+        MyLocationNewOverlay myLocationOverlay = new MyLocationNewOverlay(imlp, map);
 
         // plot user's location on the map.
         myLocationOverlay.enableMyLocation();
@@ -154,7 +131,6 @@ public class MainActivity extends Activity {
 
         //Set a listener that causes the buttons to run a method when clicked.
         sendfile.setOnClickListener(new View.OnClickListener() {
-            //Run bluetooth code on button click.
             public void onClick(View v) {
                 BlueTooth();
             }
@@ -197,24 +173,25 @@ public class MainActivity extends Activity {
         if (mBluetoothAdapter == null) {
             Toast.makeText(getApplicationContext(), "Bluetooth null !", Toast.LENGTH_SHORT).show();
         }
+        
         if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled()) {
-
             //Get a list of all paired devices in range.
             Set<BluetoothDevice> bondedDevices = mBluetoothAdapter.getBondedDevices();
 
             if (bondedDevices.isEmpty()) {
                 Toast.makeText(getApplicationContext(), "Please Pair the Device first", Toast.LENGTH_SHORT).show();
-            } else {
+            } 
+            
+            else {
                 //Iterate through list until HC-05 is found.
                 for (BluetoothDevice iterator : bondedDevices) {
                     if (iterator.getName().equals("HC-05")) {
                         BluetoothDevice device = iterator;
-
+                        
                         //Form socket with device
                         try {btSocket = device.createRfcommSocketToServiceRecord(MY_UUID);} catch (IOException ex) {}
                         //Connect to device.
                         try {btSocket.connect();} catch (IOException ex) {}
-
                         if (btSocket.isConnected()) {
                             //Write 'r' to arduino to tell it to send data.
                             try {
@@ -238,7 +215,10 @@ public class MainActivity extends Activity {
                                     }
                                 
                             }
-                            catch (IOException ex) {Toast.makeText(getApplicationContext(), "Error writing to Arduino.", Toast.LENGTH_SHORT).show();}
+                            
+                            catch (IOException ex) {
+                                Toast.makeText(getApplicationContext(), "Error writing to Arduino.", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
                 }
@@ -275,11 +255,11 @@ public class MainActivity extends Activity {
             pw.close();
             try {
                 f.close();
-            } catch (IOException ex) {
-            }
+            } 
+            catch (IOException ex) {}
 
-        } catch (FileNotFoundException e) {
-        } catch (IOException ex) {}
+        } 
+        catch (FileNotFoundException e) {}
     }
 
     //Read data in thread 
@@ -297,10 +277,9 @@ public class MainActivity extends Activity {
                     //the bytes are converted to a string and added to the textview.
                     final String readMessage = new String(buffer, 0, bytes);
                     handler.post(new Runnable() {
-                        public void run()
-                        {
+                        public void run() {
                            //This must be done because it is impossible to update the UI from within a thread.
-                            textView.append(readMessage);
+                           textView.append(readMessage);
                         }
                     });
                 }
