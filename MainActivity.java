@@ -1,5 +1,3 @@
-package com.example.nicnowak.trailcounter;
-
 import android.bluetooth.BluetoothAdapter;
 import android.os.Bundle;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
@@ -18,12 +16,10 @@ import android.location.Location;
 import java.util.Calendar;
 import java.util.Stack;
 import java.util.Scanner;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.File;
 import java.util.UUID;
-
 import android.view.View;
 import android.widget.Toast;
 import java.io.InputStream;
@@ -201,21 +197,20 @@ public class MainActivity extends Activity {
                                 //Reading code is ran inside a thread for reliable results.
                                 ConnectedThread myThread = new ConnectedThread(btSocket);
                                 myThread.start();
+                                    
                                 //Use a stack to reverse contents of textView so newest data is first.
-                                    String a = textView.getText().toString();
-                                    Stack<String> st = new Stack<>();
-                                    Scanner scanner = new Scanner(a);
-                                    while (scanner.hasNextLine()) {
-                                        String line = scanner.nextLine();
-                                        st.push(line);
-                                    }
-                                    textView.setText("");
-                                    while (!st.empty()){
-                                        textView.append(st.pop() + "\n");
-                                    }
-                                
+                                String a = textView.getText().toString();
+                                Stack<String> st = new Stack<>();
+                                Scanner scanner = new Scanner(a);
+                                while (scanner.hasNextLine()) {
+                                    String line = scanner.nextLine();
+                                    st.push(line);
+                                }
+                                textView.setText("");
+                                while (!st.empty()){
+                                    textView.append(st.pop() + "\n");
+                                }
                             }
-                            
                             catch (IOException ex) {
                                 Toast.makeText(getApplicationContext(), "Error writing to Arduino.", Toast.LENGTH_SHORT).show();
                             }
